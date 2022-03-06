@@ -52,7 +52,7 @@
     text-align: center;
 }
 .box__modificado{
-    animation: box 2s ease-out infinite;
+    animation: box 2s ease-in-out infinite alternate;
 }
 @keyframes box {
     0%{ background-color: rgb(64, 9, 116) }
@@ -61,3 +61,91 @@
 }
 
 /* Ejercicios 3 y 4 Formulario */
+.title__form{
+    color: black;
+}
+.section__form{
+    background-color: white;
+    color: blueviolet;
+}
+.form__principal{
+    margin-left: 300px;
+    width: 800px;
+    height: 350px;
+    border: .5px solid blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.form label {
+    margin: 5px 20px 5px;
+    font-size: 20px;
+    color: black;
+    font-weight: 700;
+}
+.form input {
+    border-color: rgb(216, 174, 255);
+    width: 250px;
+    margin-left: 20px;
+    height: 40px;
+    border-radius: 10px;
+}
+.form button {
+    width: 250px;
+    margin: 20px 20px;
+    height: 45px;
+    font-size: 20px;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 1s ;
+}
+.form button:hover{
+    background-color: rgb(181, 130, 228);
+}
+.form button:active{
+    cursor: pointer;
+    background-color: rgb(181, 130, 228);
+}
+.form input:focus{
+    background-color: rgb(216, 174, 255);
+    border: 0;
+}
+.logos{
+    display: flex;
+    justify-content: space-evenly;
+    /* transition: logos 1s; */
+    cursor: pointer;
+}
+
+.facebook img{
+    transition: logos 1s;
+    background-color: rgb(181, 130, 228);
+    border-radius: 50%;
+    object-fit: fill;
+}
+.twitter img{
+    transition: logos 1s;
+    background-color: rgb(181, 130, 228);
+    border-radius: 50%;
+    object-fit: fill;
+}
+.linkedin img{
+    transition: logos 1s;
+    background-color: rgb(181, 130, 228);
+    border-radius: 50%;
+    object-fit: fill;
+}
+
+.facebook img:hover , 
+.twitter img:hover,
+.linkedin img:hover{
+    transform: scale(1.2);
+    background-color: blueviolet;
+}
